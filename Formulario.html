@@ -1,0 +1,37 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+<title>Formulário de Contato</title>
+<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+</head>
+    <body>
+    <form>
+        <h3> Entre em contato</h3> 
+        <input id="email" type="text" name="email" placeholder="Seu E-mail aqui"/>
+        <input id="password" type="password" name="senha" placeholder="Digite sua senha"/>
+        <input type="submit" name="ação" value="enviar"/>
+     </form>
+    
+    <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password')
+        
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "#5f9ea0";
+        });
+            email.addEventListener('blur',()=>{
+            email.style.bordercolor =  "#ccc"
+        });
+        password.addEventListener('focus',()=>{
+           password.style.borderColor = "#ccc";
+        });
+        
+        
+        </script>
+    
+    
+    
+    
+    </body>
+    
+</html> 
